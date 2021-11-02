@@ -17,7 +17,7 @@ def get_db():
     try:
 
         if 'db' not in g:
-            g.db = sqlite3.connect('database.db')   
+            g.db = sqlite3.connect('vuelos.db')   
         return g.db
 
     except Error:
