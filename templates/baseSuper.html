@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinica del Caribe</title> 
+<title>Aeropuerto Rafael Nuñez</title> 
 <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
 </head>
 <body>
@@ -11,53 +11,15 @@
 			<ul>
 				<li>
 					<a href="#">
-						<span class="icon"><ion-icon name="bag-add-outline"></ion-icon></span>
-						<span class="title" style="font-size: 1.0em;font-weight: 500;">Clinica del Caribe</span>
+						<img class="img-ppal" src="/static/img/logo_rafa.png" alt="Logo">
 					</a>
-					<li class="hovered">
-					<a href="#">
-						<span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-						<span class="title">Perfil de SuperUsuario</span>
-					</a>
+					
 				</li>
-				<li>
-					<a href="#">
-						<span class="icon"><ion-icon name="people-outline"></ion-icon></span>
-						<span class="title">Usuarios</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="icon"><ion-icon name="medkit-outline"></ion-icon></span>
-						<span class="title">Medicos</span>
-					</a>
-				</li>
-				<li>
-					<a href="{{url_for('main.DashboardCrearCitas')}}">
-						<span class="icon"><ion-icon name="calendar-outline"></ion-icon></span>
-						<span class="title">Citas</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="icon"><ion-icon name="chatbox-ellipses-outline"></ion-icon></span>
-						<span class="title">Comentarios</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-						<span class="title">Contraseña</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
-						<span class="title">Salir</span>
-					</a>
-				</li>
-							
-               
+                
+				{% block contenido %}
+
+                {% endblock %}
+				
 			</ul>
 		</div>
 
@@ -76,7 +38,7 @@
 				</div>
 				<!-- userImg -->
 				<div class="user">
-					<img src="user.jpg">
+					
 				</div>
 			</div>
 			

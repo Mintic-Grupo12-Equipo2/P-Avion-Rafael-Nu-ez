@@ -1,23 +1,35 @@
-{%  extends "base.html" %}
+{%  extends "baseSuper.html" %}
  
 {% block contenido %}
     
-   <li class="hovered">
-		<a href="#">
-			<span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-			<span class="title">Dashboard SuperUsuario</span>
-		</a>
-	</li>
-	<li>
-	  <a href="#">
-		<span class="icon"><ion-icon name="people-circle-outline"></ion-icon></span>
-		<span class="title">Perfil</span>
+   	<li>
+	  <a href="{{url_for('main.DashboardSuper')}}">
+		<span class="icon"><ion-icon name="accessibility-outline"></ion-icon></span>
+		<span class="title">Perfil SuperUsuario</span>
 	  </a>
 	</li>
 	<li>
-	  <a href="#">
+	<a href="{{url_for('main.DashboardSuperUsers')}}">
+		<span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+		<span class="title">Usuarios</span>
+	  </a>
+	</li>
+	<li>
+	  <a href="{{url_for('main.DashboardSuperVuelos')}}">
 		<span class="icon"><ion-icon name="paper-plane-outline"></ion-icon></span>
 		<span class="title">Vuelos</span>
+	  </a>
+	</li>
+	<li>
+		<a href="{{url_for('main.DashboardSuperReserva')}}">
+		  <span class="icon"><ion-icon name="paper-plane-outline"></ion-icon></span>
+		  <span class="title">Reservas</span>
+		</a>
+	  </li>
+	<li> 
+	  <a href="{{url_for('main.DashboardSuperValoracion')}}">
+		<span class="icon"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></span>
+		<span class="title">Valoraciones</span>
 	  </a>
 	</li>
 	<li>
@@ -27,7 +39,7 @@
 	  </a>
 	</li>
 	<li>
-	  <a href="#">
+	   <a href="{{url_for('main.logout')}}">
 		<span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
 		<span class="title">Salir</span>
      </a>
